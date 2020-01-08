@@ -6,6 +6,7 @@ import SimpleLoginForm from './forms/SimpleLoginForm'
 import CustomInputForm from './forms/CustomInputForm'
 import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
 import SubmitArguments from './forms/SubmitArguments'
+import ArrayFieldForm from './forms/ArrayFieldForm'
 
 const Toc = () =>
   <ul>
@@ -13,6 +14,7 @@ const Toc = () =>
     <li><Link to='/custom'>Custom Input Example</Link></li>
     <li><Link to='/customMeta'>Custom Field Meta Example</Link></li>
     <li><Link to='/submitArguments'>Submit Arguments Example</Link></li>
+    <li><Link to='/useArrayField'>useArrayField Example</Link></li>
   </ul>
 
 const App = () =>
@@ -22,6 +24,7 @@ const App = () =>
       <Route path='/custom' component={CustomInputForm} />
       <Route path='/customMeta' component={CustomFieldMetaForm} />
       <Route path='/submitArguments' component={SubmitArguments} />
+      <Route path='/useArrayField' component={ArrayFieldForm} />
       <Route path='/' component={Toc} />
     </Switch>
   </HashRouter>

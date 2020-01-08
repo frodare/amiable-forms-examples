@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { AmiableForm, useField, useFieldCustomMeta, useSubmit } from 'amiable-forms'
 import './index.css'
 
@@ -15,7 +15,7 @@ const DisplayCustomMeta = ({ name }) => {
 const SubmitButton = () => {
   const { onSubmit } = useSubmit()
   return (
-    <button type="submit" onClick={onSubmit}>
+    <button type='submit' onClick={onSubmit}>
       Login
     </button>
   )
@@ -23,7 +23,7 @@ const SubmitButton = () => {
 
 const CustomFieldMetaForm = () => {
   const [output, setOutput] = useState('')
-  
+
   const process = (values, state) => {
     const getIdFromCustomMeta = name => state.fields[name].custom.id
     const strings = Object.entries(values).map(([name, value]) => `Field ${name} = ${value} with ID of ${getIdFromCustomMeta(name)}`)
@@ -33,8 +33,8 @@ const CustomFieldMetaForm = () => {
   return (
     <div className='custom-field-meta'>
       <AmiableForm process={process}>
-        <Input name="field0" id='10000' />
-        <Input name="field1" id='10001' />
+        <Input name='field0' id='10000' />
+        <Input name='field1' id='10001' />
 
         <DisplayCustomMeta name='field0' />
         <DisplayCustomMeta name='field1' />

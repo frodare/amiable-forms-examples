@@ -59,7 +59,6 @@ const NumberInput = ({ name, validators }) => {
         ev.preventDefault()
         return setValue(value - 1)
       default:
-        
     }
   }
   return <Input className='py-3' value={value} onChange={onChange} onKeyDown={onKeyDown} />
