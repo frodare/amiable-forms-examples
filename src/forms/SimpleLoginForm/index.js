@@ -49,4 +49,7 @@ const SimpleLoginForm = () => (
   </div>
 )
 
+SimpleLoginForm.title = 'Login Form'
+SimpleLoginForm.description = 'A simple login form to demonstrate the basic AmiableForm usage.'
+
 export default SimpleLoginForm

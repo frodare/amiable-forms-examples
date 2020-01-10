@@ -1,7 +1,6 @@
 import React, { memo } from 'react'
 import { AmiableForm, useField } from 'amiable-forms'
 import { Input, Container, ButtonGroup, Button } from 'reactstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss'
 
 const BinaryUi = memo(({ setValue, value }) => {
@@ -66,15 +65,14 @@ const NumberInput = ({ name, validators }) => {
 
 const CustomInputForm = () => (
   <Container className='custom'>
-    <h1>amiable-forms</h1>
-    <p>
-      Example of a custom input created for amiable-forms used to set a number
-      in a binary fashion.
-    </p>
     <AmiableForm>
       <NumberInput name='binary' />
       <Binary name='binary' />
     </AmiableForm>
   </Container>
 )
+
+CustomInputForm.title = 'Custom Field Example'
+CustomInputForm.description = 'Example of a custom input created for amiable-forms used to set a number in a binary fashion.'
+
 export default CustomInputForm

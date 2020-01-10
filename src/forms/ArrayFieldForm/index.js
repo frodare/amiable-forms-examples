@@ -48,16 +48,14 @@ const process = (values, state, level) => {
 
 const ArrayFieldForm = () => (
   <Container className='custom'>
-    <h1>amiable-forms</h1>
-    <h2>useArrayField</h2>
-    <p>
-      An example form showing how to use the useArrayField hook.
-    </p>
     <AmiableForm process={process}>
       <Emails />
       <SubmitButton />
     </AmiableForm>
   </Container>
 )
+
+ArrayFieldForm.title = 'useArrayField Example'
+ArrayFieldForm.description = 'An example form showing how to use the useArrayField hook.'
 
 export default ArrayFieldForm

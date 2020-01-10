@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { AmiableForm, useField, useFieldCustomMeta, useSubmit } from 'amiable-forms'
-import './index.css'
 
 const Input = ({ name, id }) => {
   const { value, onChange } = useField({ name, custom: { id } })
@@ -46,5 +45,8 @@ const CustomFieldMetaForm = () => {
     </div>
   )
 }
+
+CustomFieldMetaForm.title = 'Custom Field Meta Data'
+CustomFieldMetaForm.description = 'An example form showing how to use custom file meta data.'
 
 export default CustomFieldMetaForm

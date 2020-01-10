@@ -2,7 +2,6 @@ import React from 'react'
 import { AmiableForm, useSubmit } from 'amiable-forms'
 import { Container, Button } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.scss'
 
 const SubmitButton = ({ level }) => {
   const { submit } = useSubmit()
@@ -16,11 +15,6 @@ const process = (values, state, level) => {
 
 const SubmitArguments = () => (
   <Container className='custom'>
-    <h1>amiable-forms</h1>
-    <h2>Submit Arguments</h2>
-    <p>
-      An example form showing how to use submit arguments.
-    </p>
     <AmiableForm process={process}>
       <SubmitButton level='Gold' />
       <SubmitButton level='Silver' />
@@ -28,4 +22,8 @@ const SubmitArguments = () => (
     </AmiableForm>
   </Container>
 )
+
+SubmitArguments.title = 'Submit Arguments'
+SubmitArguments.description = 'An example form showing how to use submit arguments.'
+
 export default SubmitArguments
