@@ -9,6 +9,7 @@ import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
 import SubmitArguments from './forms/SubmitArguments'
 import ArrayFieldForm from './forms/ArrayFieldForm'
 import RemoteSubmit from './forms/RemoteSubmit'
+import InitialValuesForm from './forms/InitialValuesForm'
 
 const pages = [
   SimpleLoginForm,
@@ -16,7 +17,8 @@ const pages = [
   CustomFieldMetaForm,
   SubmitArguments,
   ArrayFieldForm,
-  RemoteSubmit
+  RemoteSubmit,
+  InitialValuesForm
 ]
 
 const Wrapper = ({ Form }) =>
