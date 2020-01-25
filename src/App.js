@@ -10,6 +10,7 @@ import SubmitArguments from './forms/SubmitArguments'
 import ArrayFieldForm from './forms/ArrayFieldForm'
 import RemoteSubmit from './forms/RemoteSubmit'
 import InitialValuesForm from './forms/InitialValuesForm'
+import MatchFieldForm from './forms/MatchFieldForm'
 
 const pages = [
   SimpleLoginForm,
@@ -18,7 +19,8 @@ const pages = [
   SubmitArguments,
   ArrayFieldForm,
   RemoteSubmit,
-  InitialValuesForm
+  InitialValuesForm,
+  MatchFieldForm
 ]
 
 const Wrapper = ({ Form }) =>
