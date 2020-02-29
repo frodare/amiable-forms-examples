@@ -12,6 +12,7 @@ import RemoteSubmit from './forms/RemoteSubmit'
 import InitialValuesForm from './forms/InitialValuesForm'
 import MatchFieldForm from './forms/MatchFieldForm'
 import LargeForm from './forms/LargeForm'
+import ValueUpdater from './forms/ValueUpdaterForm'
 
 const pages = [
   SimpleLoginForm,
@@ -22,7 +23,8 @@ const pages = [
   RemoteSubmit,
   InitialValuesForm,
   MatchFieldForm,
-  LargeForm
+  LargeForm,
+  ValueUpdater
 ]
 
 const Wrapper = ({ Form }) =>
