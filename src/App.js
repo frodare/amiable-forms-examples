@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route, HashRouter, Link } from 'react-router-dom'
-import { Input, Container, ButtonGroup, Button, Col, Row } from 'reactstrap'
+import { Container, Col, Row } from 'reactstrap'
 import './App.scss'
 
 import SimpleLoginForm from './forms/SimpleLoginForm'
@@ -11,6 +11,7 @@ import ArrayFieldForm from './forms/ArrayFieldForm'
 import RemoteSubmit from './forms/RemoteSubmit'
 import InitialValuesForm from './forms/InitialValuesForm'
 import MatchFieldForm from './forms/MatchFieldForm'
+import LargeForm from './forms/LargeForm'
 
 const pages = [
   SimpleLoginForm,
@@ -20,7 +21,8 @@ const pages = [
   ArrayFieldForm,
   RemoteSubmit,
   InitialValuesForm,
-  MatchFieldForm
+  MatchFieldForm,
+  LargeForm
 ]
 
 const Wrapper = ({ Form }) =>
