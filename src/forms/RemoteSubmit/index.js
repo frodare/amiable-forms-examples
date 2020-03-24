@@ -28,7 +28,7 @@ const RemoteSubmit = () => {
     <Container className='custom'>
 
       <AmiableForm process={process}>
-        <div class='form-content'>
+        <div className='form-content'>
           <h5>Inside Form</h5>
           <TextField name='test' />
           <ShareSubmit sharedRef={ref} />
@@ -36,7 +36,7 @@ const RemoteSubmit = () => {
         </div>
       </AmiableForm>
 
-      <div class='form-content'>
+      <div className='form-content'>
         <h5>Outside Form</h5>
         <Button onClick={() => ref.current()}>Remote Submit Button</Button>
       </div>
