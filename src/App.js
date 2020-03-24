@@ -13,6 +13,7 @@ import InitialValuesForm from './forms/InitialValuesForm'
 import MatchFieldForm from './forms/MatchFieldForm'
 import LargeForm from './forms/LargeForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
+import DropzoneForm from './forms/DropzoneForm'
 
 const pages = [
   SimpleLoginForm,
@@ -24,7 +25,8 @@ const pages = [
   InitialValuesForm,
   MatchFieldForm,
   LargeForm,
-  ValueUpdater
+  ValueUpdater,
+  DropzoneForm
 ]
 
 const Wrapper = ({ Form }) =>

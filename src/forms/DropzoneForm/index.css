@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700&display=swap');
+.login {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 2em 4em;
+  color: #555;
+}
+
+.login input {
+  box-sizing: border-box;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  outline: none;
+  margin: 0.5em;
+}
+
+.login label {
+  display: block;
+  text-align: left;
+}
+
+.login input[type='checkbox'] {
+  background-color: red;
+  display: inline-block;
+  width: initial;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+.login input:focus {
+  border: 1px solid #999;
+  box-shadow: 0 0 5px rgb(172, 172, 172);
+}
+
+.login button {
+  border: 2px solid #eee;
+  background-color: #555;
+  color: #eee;
+  padding: 12px 45px;
+  text-transform: uppercase;
+}
+
+.login button:active {
+  transform: scale(0.95);
+}
+
+.login button:focus {
+  outline: none;
+}
