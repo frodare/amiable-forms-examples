@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700&display=swap');
+.actions-form {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 2em 4em;
+  color: #555;
+}
+
+.actions-form .field {
+  position: relative;
+}
+
+.actions-form .field-message {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.actions-form input {
+  box-sizing: border-box;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  outline: none;
+  margin: 0.5em;
+}
+
+.actions-form label {
+  display: block;
+  text-align: left;
+}
+
+.actions-form input[type='checkbox'] {
+  background-color: red;
+  display: inline-block;
+  width: initial;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+.actions-form input:focus {
+  border: 1px solid #999;
+  box-shadow: 0 0 5px rgb(172, 172, 172);
+}
