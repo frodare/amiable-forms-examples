@@ -3,32 +3,34 @@ import { Switch, Route, HashRouter, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'reactstrap'
 import './App.scss'
 
-import SimpleLoginForm from './forms/SimpleLoginForm'
-import CustomInputForm from './forms/CustomInputForm'
-import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
-import SubmitArguments from './forms/SubmitArguments'
-import ArrayFieldForm from './forms/ArrayFieldForm'
-import RemoteSubmit from './forms/RemoteSubmit'
-import InitialValuesForm from './forms/InitialValuesForm'
-import MatchFieldForm from './forms/MatchFieldForm'
-import LargeForm from './forms/LargeForm'
-import ValueUpdater from './forms/ValueUpdaterForm'
-import DropzoneForm from './forms/DropzoneForm'
 import ActionsForm from './forms/ActionsForm'
+import ArrayFieldForm from './forms/ArrayFieldForm'
+import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
+import CustomInputForm from './forms/CustomInputForm'
+import DropzoneForm from './forms/DropzoneForm'
+import InitialValuesForm from './forms/InitialValuesForm'
+import LargeForm from './forms/LargeForm'
+import MatchFieldForm from './forms/MatchFieldForm'
+import RemoteSubmit from './forms/RemoteSubmit'
+import SimpleLoginForm from './forms/SimpleLoginForm'
+import SubmitArguments from './forms/SubmitArguments'
+import SubmitFeatures from './forms/SubmitFeatures'
+import ValueUpdater from './forms/ValueUpdaterForm'
 
 const pages = [
-  SimpleLoginForm,
-  CustomInputForm,
-  CustomFieldMetaForm,
-  SubmitArguments,
+  ActionsForm,
   ArrayFieldForm,
-  RemoteSubmit,
-  InitialValuesForm,
-  MatchFieldForm,
-  LargeForm,
-  ValueUpdater,
+  CustomFieldMetaForm,
+  CustomInputForm,
   DropzoneForm,
-  ActionsForm
+  InitialValuesForm,
+  LargeForm,
+  MatchFieldForm,
+  RemoteSubmit,
+  SimpleLoginForm,
+  SubmitArguments,
+  SubmitFeatures,
+  ValueUpdater
 ]
 
 const Wrapper = ({ Form }) =>
