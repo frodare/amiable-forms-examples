@@ -15,6 +15,7 @@ import RemoteSubmit from './forms/RemoteSubmit'
 import SimpleLoginForm from './forms/SimpleLoginForm'
 import SubmitArguments from './forms/SubmitArguments'
 import SubmitFeatures from './forms/SubmitFeatures'
+import TestPropChanges from './forms/TestPropChanges'
 import ValueUpdater from './forms/ValueUpdaterForm'
 
 const pages = [
@@ -30,6 +31,7 @@ const pages = [
   SimpleLoginForm,
   SubmitArguments,
   SubmitFeatures,
+  TestPropChanges,
   ValueUpdater
 ]
 
