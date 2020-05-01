@@ -16,6 +16,7 @@ import SimpleLoginForm from './forms/SimpleLoginForm'
 import SubmitArguments from './forms/SubmitArguments'
 import SubmitFeatures from './forms/SubmitFeatures'
 import TestPropChanges from './forms/TestPropChanges'
+import TransformForm from './forms/TransformForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
 
 const pages = [
@@ -32,6 +33,7 @@ const pages = [
   SubmitArguments,
   SubmitFeatures,
   TestPropChanges,
+  TransformForm,
   ValueUpdater
 ]
 
