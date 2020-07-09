@@ -18,6 +18,7 @@ import SubmitFeatures from './forms/SubmitFeatures'
 import TestPropChanges from './forms/TestPropChanges'
 import TransformForm from './forms/TransformForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
+import RepeatedField from './forms/RepeatedFieldForm'
 
 const pages = [
   ActionsForm,
@@ -34,7 +35,8 @@ const pages = [
   SubmitFeatures,
   TestPropChanges,
   TransformForm,
-  ValueUpdater
+  ValueUpdater,
+  RepeatedField
 ]
 
 const Wrapper = ({ Form }) =>
