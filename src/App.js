@@ -6,8 +6,11 @@ import './App.scss'
 
 import ActionsForm from './forms/ActionsForm'
 import ArrayFieldForm from './forms/ArrayFieldForm'
+import ComplexDataForm from './forms/ComplexDataForm'
+import CopyFieldsForm from './forms/CopyFieldsForm'
 import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
 import CustomInputForm from './forms/CustomInputForm'
+import DateField from './forms/DateField'
 import DropzoneForm from './forms/DropzoneForm'
 import InitialValuesForm from './forms/InitialValuesForm'
 import LargeForm from './forms/LargeForm'
@@ -19,14 +22,15 @@ import SubmitFeatures from './forms/SubmitFeatures'
 import TestPropChanges from './forms/TestPropChanges'
 import TransformForm from './forms/TransformForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
-import DateField from './forms/DateField'
-import ComplexDataForm from './forms/ComplexDataForm'
 
 const pages = [
   ActionsForm,
   ArrayFieldForm,
+  ComplexDataForm,
+  CopyFieldsForm,
   CustomFieldMetaForm,
   CustomInputForm,
+  DateField,
   DropzoneForm,
   InitialValuesForm,
   LargeForm,
@@ -37,9 +41,7 @@ const pages = [
   SubmitFeatures,
   TestPropChanges,
   TransformForm,
-  ValueUpdater,
-  DateField,
-  ComplexDataForm
+  ValueUpdater
 ]
 
 const Wrapper = ({ Form }) =>
