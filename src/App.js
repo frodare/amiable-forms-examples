@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, HashRouter, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'reactstrap'
+import version from 'amiable-forms/dist/version'
 import './App.scss'
 
 import ActionsForm from './forms/ActionsForm'
@@ -18,6 +19,8 @@ import SubmitFeatures from './forms/SubmitFeatures'
 import TestPropChanges from './forms/TestPropChanges'
 import TransformForm from './forms/TransformForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
+import DateField from './forms/DateField'
+import ComplexDataForm from './forms/ComplexDataForm'
 
 const pages = [
   ActionsForm,
@@ -34,7 +37,9 @@ const pages = [
   SubmitFeatures,
   TestPropChanges,
   TransformForm,
-  ValueUpdater
+  ValueUpdater,
+  DateField,
+  ComplexDataForm
 ]
 
 const Wrapper = ({ Form }) =>
@@ -44,7 +49,7 @@ const Wrapper = ({ Form }) =>
         <Toc />
       </Col>
       <Col>
-        <h1>amiable-forms Examples</h1>
+        <h1>amiable-forms Examples (v{version})</h1>
         <h2>{Form.title || Form.name}</h2>
         <p>{Form.description || 'missing'}</p>
         <Form />
