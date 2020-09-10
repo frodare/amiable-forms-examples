@@ -30,7 +30,7 @@ const initialValues = {
 const useDetectChange = ({ name, value }) => {
   const ref = useRef()
   if (ref.current === undefined) {
-    ref.current = value;
+    ref.current = value
   } else if (ref.current !== value) {
     console.log('DETECTED CHANGE [', name, ']')
   }
@@ -49,7 +49,6 @@ const DetectChanges = () => {
   return null
 }
 
-
 const TestPropChanges = () => {
   const [version, setVersion] = useState(0)
   const [values, setValues] = useState(initialValues)
@@ -67,7 +66,7 @@ const TestPropChanges = () => {
     setValues(next)
   }, [values, setValues])
 
-  //const initialValues = useMemo()
+  // const initialValues = useMemo()
 
   const process = useCallback((values, state) => {
     console.log('Running proces with version: ', version)
