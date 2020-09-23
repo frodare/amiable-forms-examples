@@ -24,6 +24,7 @@ const Actions = () => {
       <Col xs='3'><Button className='btn-block mb-1' onClick={() => setValue('location', 'office 1532')}>setValue</Button></Col>
       <Col xs='3'><Button className='btn-block mb-1' onClick={() => setValues({ first: 'Mike' })}>setValues</Button></Col>
       <Col xs='3'><Button className='btn-block mb-1' onClick={() => setValues({ first: 'Mike' }, { merge: true })}>setValues (merge)</Button></Col>
+      <Col xs='3'><Button className='btn-block mb-1' onClick={() => setValues(values => console.log(values) || ({ ...values, first: values.first + 'bar' }))}>setValues (functional)</Button></Col>
     </Row>
   )
 }
