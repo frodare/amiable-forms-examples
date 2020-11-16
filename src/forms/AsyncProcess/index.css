@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700&display=swap');
+
+.validation-form {
+  font-family: 'Raleway', sans-serif;
+  padding: 2em 4em;
+  color: #555;
+}
+
+.validation-form .field {
+  position: relative;
+}
+
+.validation-form .field-message {
+  position: absolute;
+  right: 2em;
+  top: 9px;
+  text-align: right;
+  font-size: 14px;
+}
+
+
+.validation-form .invalid .field-message {
+  color: red;
+}
+
+.validation-form input {
+  box-sizing: border-box;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  outline: none;
+  margin: 0.5em;
+}
+
+.validation-form label {
+  display: block;
+  text-align: left;
+}
+
+.validation-form input[type='checkbox'] {
+  background-color: red;
+  display: inline-block;
+  width: initial;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+.validation-form input:focus {
+  border: 1px solid #999;
+  box-shadow: 0 0 5px rgb(172, 172, 172);
+}
+
+.modal-glass {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 190;
+  background: white;
+}
+
+.debug-wrapper {
+  margin-top: 3em;
+  border: none;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 1em;
+}
+
+.debug-wrapper h5 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.debug-wrapper pre {
+  font-size: 10px;
+  text-align: left;
+  overflow: hidden;
+  
+  border: none;
+  
+}

@@ -6,6 +6,7 @@ import './App.scss'
 
 import ActionsForm from './forms/ActionsForm'
 import ArrayFieldForm from './forms/ArrayFieldForm'
+import AsyncProcess from './forms/AsyncProcess'
 import ComplexDataForm from './forms/ComplexDataForm'
 import CopyFieldsForm from './forms/CopyFieldsForm'
 import CustomFieldMetaForm from './forms/CustomFieldMetaForm'
@@ -21,11 +22,14 @@ import SubmitArguments from './forms/SubmitArguments'
 import SubmitFeatures from './forms/SubmitFeatures'
 import TestPropChanges from './forms/TestPropChanges'
 import TransformForm from './forms/TransformForm'
+import UtilityHooksForm from './forms/UtilityHooksForm'
+import ValidationExampleForm from './forms/ValidationExampleForm'
 import ValueUpdater from './forms/ValueUpdaterForm'
 
 const pages = [
   ActionsForm,
   ArrayFieldForm,
+  AsyncProcess,
   ComplexDataForm,
   CopyFieldsForm,
   CustomFieldMetaForm,
@@ -41,6 +45,8 @@ const pages = [
   SubmitFeatures,
   TestPropChanges,
   TransformForm,
+  UtilityHooksForm,
+  ValidationExampleForm,
   ValueUpdater
 ]
 
@@ -50,7 +56,7 @@ const Wrapper = ({ Form }) =>
       <Col xs='3'>
         <Toc />
       </Col>
-      <Col>
+      <Col xs='9'>
         <h1>amiable-forms Examples (v{version})</h1>
         <h2>{Form.title || Form.name}</h2>
         <p>{Form.description || 'missing'}</p>
